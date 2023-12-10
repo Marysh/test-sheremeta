@@ -1,6 +1,9 @@
-To see the application you can run container with 
-arm arch: `docker run -p 3000:80 marysheremeta/task-manager-arm`
-amd arch: `docker run -p 3000:80 marysheremeta/task-manager-amd`
+## To see the application you can run container with 
+
+arm arch: 
+##### `docker run -p 3000:80 marysheremeta/task-manager-arm` 
+amd arch:
+##### `docker run -p 3000:80 marysheremeta/task-manager-amd`
 
 
 ## Available Scripts
