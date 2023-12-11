@@ -7,7 +7,7 @@ import {store} from "./store/store";
 function App() {
   return (
       <Provider store={store}>
-          <div className="container lg mx-auto py-6">
+          <div className="container mx-auto max-w-screen-lg p-6">
               <TasksPage/>
           </div>
       </Provider>

@@ -27,7 +27,7 @@ const TaskItem: React.FC<TaskItemProps> = ({
         <>
         <TableRow
             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-            <TableCell style={{width: '50%'}}
+            <TableCell style={{width: '73%'}}
                        onClick={() => setOpen(!open)}>
                 <div className="flex items-center">
                     <IconButton
@@ -38,7 +38,7 @@ const TaskItem: React.FC<TaskItemProps> = ({
                     </IconButton>
                     <div className="text-lg flex-1 cursor-pointer truncate">{capitalizeFirstLetter(task.name)}</div></div>
             </TableCell>
-            <TableCell style={{width: '16%'}}>
+            <TableCell style={{width: '15%'}}>
                 <div className="flex items-center ml-2">
                     {task.dueDate && <>
                         <CalendarTodayOutlinedIcon color="action"/>
@@ -46,7 +46,7 @@ const TaskItem: React.FC<TaskItemProps> = ({
                     </>}
                 </div>
             </TableCell>
-            <TableCell style={{width: '11%'}}>
+            <TableCell style={{width: '10%'}}>
                 <select id="status" name="status" className={`outline-none p-2 rounded ${color} text-white text-center`}
                         onChange={(e) =>
                             onUpdateStatus(task.id, e.target.value as TaskStatus)}

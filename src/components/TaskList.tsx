@@ -43,16 +43,16 @@ const TaskList: React.FC = () => {
                             }}>
                         <AddIcon/> Add task
                     </Button>
-                    {isModalOpen &&
-						<Modal
-							open={true}
-							onClose={handleClose}
-							aria-labelledby="modal-modal-title"
-							aria-describedby="modal-modal-description"
-						>
-							<NewTaskForm onClose={handleClose} />
-						</Modal>
-                    }
+                    <Modal
+                        open={isModalOpen}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                    >
+                        <>
+                            <NewTaskForm onClose={handleClose} />
+                        </>
+                    </Modal>
             </div>
             <TableContainer component={Paper}>
                 <Table stickyHeader aria-label="simple table">
